@@ -4,15 +4,18 @@ Design app to do the following:
     - get email & attachmnet from outlook
 
     - combine excel file with existing 
+        --- Now instead of combining. I am now modifying downloaded file 
 
     - upload completed excel file to network drive/sharepoint
 
 
-Outstanding tasks:
+Outstanding tasks/bugs:
     - which email attachmnet to grab? 
+        --current set to grab all emails from folder 
     - when to get attachmnet? get the latest one delivered once every day? 
     - when/how to execute python. Automatically? Scheduled Tasks? 
     - compiled package install for blanket computer 
+    - getting mail while existing excel file is open fails 
 
 Additional feats:  
     - delete attachmnet downloaded and only present completed compiled

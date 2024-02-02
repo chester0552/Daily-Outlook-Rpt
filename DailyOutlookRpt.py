@@ -1,6 +1,7 @@
 import win32com.client
 from pathlib import Path
 import re
+import subprocess
 
 def get_reports_folder():
     outlook = win32com.client.Dispatch("Outlook.Application").GetNamespace("MAPI")
@@ -39,11 +40,11 @@ def process_reports_folder(folder):
         final_format = formatted_received_time.replace(":",".")
         
         #Create the folder from email subject & date 
-        folder_name = f"{subject_clean}_{final_format}"
+        #folder_name = f"{subject_clean}_{final_format}"
 
 
-        target_folder = output_dir / folder_name
-        target_folder.mkdir(parents=True, exist_ok=True)
+        target_folder = output_dir #/ folder_name
+        #target_folder.mkdir(parents=True, exist_ok=True)
 
         #This is if we want to pull the body of the email into file explorer 
         #Path(target_folder / "EMAIL_BODY.txt").write_text(str(body))
@@ -57,9 +58,3 @@ def process_reports_folder(folder):
 reports_folder = get_reports_folder()
 process_reports_folder(reports_folder)
 
-
- # Path to the Python file you want to run
-#file_to_run = "C:\Users\xavie\Desktop\Outlook Py\combine_excel.py"
-
-# Use exec to run the other Python file in the same process
-#exec(open(file_to_run).read()) 
