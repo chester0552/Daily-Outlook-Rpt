@@ -1,0 +1,1 @@
+"C:\Users\xavie\AppData\Local\Programs\Python\Python310\python.exe" "C:\Users\xavie\Desktop\Outlook Py\getoutlookmail.py"

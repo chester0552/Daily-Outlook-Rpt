@@ -1,0 +1,24 @@
+
+Design app to do the following:
+
+    - get email & attachmnet from outlook
+
+    - combine excel file with existing 
+
+    - upload completed excel file to network drive/sharepoint
+
+
+Outstanding tasks:
+    - which email attachmnet to grab? 
+    - when to get attachmnet? get the latest one delivered once every day? 
+    - when/how to execute python. Automatically? Scheduled Tasks? 
+    - compiled package install for blanket computer 
+
+Additional feats:  
+    - delete attachmnet downloaded and only present completed compiled
+    
+
+
+
+
+
